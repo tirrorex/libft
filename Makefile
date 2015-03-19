@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tnoah <tnoah@student.42.fr>                +#+  +:+       +#+         #
+#    By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 13:49:28 by tnoah             #+#    #+#              #
-#    Updated: 2015/02/13 18:18:10 by tnoah            ###   ########.fr        #
+#    Updated: 2015/03/19 17:08:42 by zipeldiablo      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,6 +78,7 @@ SRC = \
 		lst/ft_lstadd_after.c \
 		lst/ft_lstadd_back.c \
 		lst/ft_lstpush_front.c \
+		lst/ft_lstpush_back.c \
 		lst/ft_lstln.c \
 		lst/ft_lstln_front.c \
 		lst/ft_lstln_after.c \
