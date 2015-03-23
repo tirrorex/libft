@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tnoah <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 16:55:24 by tnoah             #+#    #+#             */
-/*   Updated: 2015/02/04 17:57:32 by tnoah            ###   ########.fr       */
+/*   Updated: 2015/03/20 16:48:55 by zipeldiablo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
-	t_list		*palst;
+	t_list		*tmp;
 
 	if (alst && new)
 	{
-		palst = *alst;
-		if (palst)
+		tmp = *alst;
+		if (tmp)
 		{
-			while (palst->next)
-				palst = palst->next;
-			palst->next = new;
+			while (tmp->next)
+				tmp = tmp->next;
+			tmp->next = new;
 		}
 		else
 			*alst = new;

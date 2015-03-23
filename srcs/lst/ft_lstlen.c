@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tnoah <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 19:49:46 by tnoah             #+#    #+#             */
-/*   Updated: 2015/02/04 19:50:47 by tnoah            ###   ########.fr       */
+/*   Updated: 2015/03/20 16:47:32 by zipeldiablo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 int			ft_lstlen(t_list *lst)
 {
 	int		size;
+	t_list	*tmp;
 
 	size = 0;
-	while (lst)
+	tmp = lst;
+	while (tmp)
 	{
 		size++;
-		lst = lst->next;
+		tmp = tmp->next;
 	}
 	return (size);
 }

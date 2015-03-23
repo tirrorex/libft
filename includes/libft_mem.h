@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_mem.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tnoah <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 18:30:16 by tnoah             #+#    #+#             */
-/*   Updated: 2015/02/04 18:30:17 by tnoah            ###   ########.fr       */
+/*   Updated: 2015/03/20 11:59:45 by zipeldiablo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
+void				*ft_memdup(const void *src, size_t size);
 
 #endif

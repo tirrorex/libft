@@ -6,7 +6,7 @@
 #    By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 13:49:28 by tnoah             #+#    #+#              #
-#    Updated: 2015/03/19 17:08:42 by zipeldiablo      ###   ########.fr        #
+#    Updated: 2015/03/20 12:00:01 by zipeldiablo      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRC = \
 		mem/ft_memmove.c \
 		mem/ft_memchr.c \
 		mem/ft_memcmp.c \
+		mem/ft_memdup.c \
 		str/ft_strlen.c \
 		str/ft_strdup.c \
 		str/ft_strcpy.c \
