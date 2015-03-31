@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_epur_str.c                                      :+:      :+:    :+:   */
+/*   ft_epurstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tnoah <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/13 12:27:51 by tnoah             #+#    #+#             */
-/*   Updated: 2015/02/13 16:22:07 by tnoah            ###   ########.fr       */
+/*   Updated: 2015/03/31 11:10:58 by zipeldiablo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char			*ft_epurstr(char *str)
 		if ((s1 = ft_strnew(len - i + 1)) == NULL)
 			return (NULL);
 		create_epur_str(s1, str, i, len);
-		free(str);
+		//free(str);
 		return (s1);
 	}
 	return (NULL);
