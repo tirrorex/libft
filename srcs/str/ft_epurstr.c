@@ -6,7 +6,7 @@
 /*   By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/13 12:27:51 by tnoah             #+#    #+#             */
-/*   Updated: 2015/03/31 11:10:58 by zipeldiablo      ###   ########.fr       */
+/*   Updated: 2015/03/31 18:16:38 by zipeldiablo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char			*ft_epurstr(char *str)
 		if ((s1 = ft_strnew(len - i + 1)) == NULL)
 			return (NULL);
 		create_epur_str(s1, str, i, len);
-		//free(str);
+		free(str);
 		return (s1);
 	}
 	return (NULL);
