@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tnoah <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/04/04 16:05:40 by tnoah             #+#    #+#             */
+/*   Updated: 2015/04/04 16:06:11 by tnoah            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memdup(const void *src, size_t size)
@@ -9,21 +21,21 @@ void	*ft_memdup(const void *src, size_t size)
 
 	if (src && size)
 	{
-	i = 0;
-	cpy = ft_memalloc(size);
-	src_char = src;
-	cpy_char = cpy;
-	if (cpy)
-	{
-		while (i < size)
+		i = 0;
+		cpy = ft_memalloc(size);
+		src_char = src;
+		cpy_char = cpy;
+		if (cpy)
 		{
-			cpy_char[i] = src_char[i];
-			i++;
+			while (i < size)
+			{
+				cpy_char[i] = src_char[i];
+				i++;
+			}
+			return (cpy);
 		}
-		return (cpy);
-	}
-	else
-		return (NULL);
+		else
+			return (NULL);
 	}
 	return (NULL);
 }
