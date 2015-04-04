@@ -6,7 +6,7 @@
 #    By: zipeldiablo <zipeldiablo@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 13:49:28 by tnoah             #+#    #+#              #
-#    Updated: 2015/03/20 12:00:01 by zipeldiablo      ###   ########.fr        #
+#    Updated: 2015/04/04 15:05:52 by zipeldiablo      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -115,8 +115,9 @@ SRC = \
 		chr/ft_isspace.c \
 		str/ft_epurstr.c \
 		tab/ft_tabcpy.c \
-		tab/ft_tabtolst.c
-
+		tab/ft_tabtolst.c \
+		nbr/ft_intlen.c \
+		nbr/ft_atol.c \
 
 SRCS = $(addprefix $(SRCDIR)/, $(SRC))
 OBJS = $(addprefix $(OBJDIR)/, $(patsubst %.c, %.o,$(SRC)))
