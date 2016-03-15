@@ -14,5 +14,4 @@
 
 t_btree			*btree_sort(t_btree *root)
 {
-
 }

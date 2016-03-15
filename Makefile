@@ -20,7 +20,7 @@ INCDIR = includes
 
 SRC = \
 		mem/ft_memset.c \
-	  	mem/ft_bzero.c \
+	  mem/ft_bzero.c \
 		mem/ft_memcpy.c \
 		mem/ft_memccpy.c \
 		mem/ft_memmove.c \
